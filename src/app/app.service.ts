@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { of } from 'rxjs';
 
-@Injectable({providedIn: 'root'})
+@Injectable({ providedIn: 'root' })
 export class AppService {
-  values$ = of([
-    { id: 1, name: 'One', price: 100 },
-    { id: 2, name: 'Two', price: 200 },
-    { id: 3, name: 'Three', price: 10  }
-  ])
+  people$ = of([
+    { id: 1, name: 'John', age: 22 },
+    { id: 2, name: 'Tony', age: 30 },
+    { id: 3, name: 'Anakin', age: 49 },
+  ]);
 
-  constructor() { }
+  constructor() {}
 }
